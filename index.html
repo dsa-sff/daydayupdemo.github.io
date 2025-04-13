@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Assuming the image file 'example.jpg' is in the same directory as this HTML file -->
+    <img src="example.jpg" alt="Example Image" usemap="#imagemap">
+
+    <map name="imagemap">
+        <!-- Define the coordinates and links for each clickable area -->
+        <area shape="rect" coords="0,0,300,200" href="https://www.example.com/samepage" alt="Same Page">
+        <area shape="rect" coords="301,0,600,200" href="https://www.example.com/samepage" alt="Same Page">
+        <area shape="rect" coords="0,201,600,400" href="https://www.example.com/samepage" alt="Same Page">
+    </map>
+
+</body>
+</html>
+
+
+
